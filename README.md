@@ -1,5 +1,5 @@
 
-**How to set up Iu Photo Gallery**
+**How to set up UI Photo Gallery**
 
 1.clone this repository to your local Machine by using this cammand `git clone https://github.com/yvesP123/Challenges.git`
 
