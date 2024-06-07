@@ -1,0 +1,73 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Container for the row */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+    width: 200%; /* Full width */
+    height: 100%; /* Full height */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: stretch; /* Stretch items to fill the container height */
+}
+
+/* Container for images */
+.row > div {
+    position: relative;
+    margin: 0px;
+    flex: 1 1 calc(25% - 20px); /* Adjusted to fit four items in a row with margins */
+    max-width: calc(50% - 20px); /* Ensure the divs don't get too wide */
+    height: calc(50.6% - 20px); /* Adjusted to fit two rows with margins */
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    height: 210%; /* Ensure the image fills the div */
+    display: block;
+    object-fit: cover; /* Cover the div area without distortion */
+}
+
+/* Overlay text */
+h3, h6 {
+    position: absolute;
+    color: white;
+    margin-left: 30px;
+    width: 100%;
+    padding: 10px;
+   
+}
+
+/* Positioning text */
+h3 {
+    top: 35rem; /* Adjust as needed */
+}
+
+h6 {
+    top: 39rem; /* Adjust as needed */
+}
+@media (max-width: 768px) 
+{
+    h3,h6
+    {
+        display: none;
+    }
+}
